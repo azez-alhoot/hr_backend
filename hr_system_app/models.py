@@ -5,7 +5,7 @@ from django.db import models
 class Candidate(models.Model):
     INFORMATION_TECHNOLOGY = 'IT'
     HUMAN_RESOURCE = 'HR'
-    FINANCE = 'F'
+    FINANCE = 'Finance'
 
     DEPARTMENTS_CHOICES = (
         (INFORMATION_TECHNOLOGY, 'IT'),
