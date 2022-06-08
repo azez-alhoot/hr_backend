@@ -1,0 +1,25 @@
+# jetBrains template
+/.idea
+/.idea/*
+
+# macOS template
+*.DS_Store
+.DS_STORE
+/.idea/
+*.pyc
+
+# git files
+.git
+.gitignore
+
+# virtual directory
+venv/
+
+# environment files
+.env
+
+# deploy files
+deploy/
+
+# temp files
+backup.py

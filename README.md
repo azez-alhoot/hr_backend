@@ -1,6 +1,5 @@
 ## HR System Backend
 
-
 ## Technology Stack
 
 - [Python 3.8][1]
@@ -38,7 +37,6 @@ Make sure you install all the required dependencies before running app.
     # open .env file and enter values for environment variables
 
 ### 8. Run App
-    $ python manage.py makemigrations
     $ python mange.py migrate
     $ python manage.py createsuperuser
     $ python manage.py runserver
@@ -51,7 +49,7 @@ Make sure you install all the required dependencies before running app.
     $ brew cask install docker
 
 ### 2. Clone the repository
-	$ git clone git@bitbucket.org:ikcon/order-integration.git
+	$ git clone https://github.com/azez-alhoot/hr_backend.git
 	$ cd order-integration
 
 ### 3. Setup environment variables
@@ -60,3 +58,16 @@ Make sure you install all the required dependencies before running app.
 
 ### 4. Run App
     $ docker-compose -f deploy/development/docker-compose.yml up --build
+
+## Notes
+    This APIs for HR system that enable candidates to apply for jobs and HR managers to check their requests  
+    
+
+## Copyright
+Copyright (c) 2022 Abedalaziz Alissa.
+
+
+[1]: https://www.python.org/downloads/
+[2]: https://pypi.org/project/pip/
+[3]: https://virtualenv.pypa.io/en/latest/
+[4]: https://www.docker.com/

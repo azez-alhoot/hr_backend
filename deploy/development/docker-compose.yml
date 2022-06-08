@@ -1,0 +1,21 @@
+version: "3"
+services:
+  db:
+    image: postgres
+    volumes:
+      - ../../data:/var/lib/postgresql/data/
+    expose:
+      - '5432'
+    env_file:
+      - ./config/db/.env
+  hr_backend:
+    build: ../../
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ../../:/myapp
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./config/app/.env
+    depends_on:
+      - db
